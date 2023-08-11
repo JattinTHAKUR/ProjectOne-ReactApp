@@ -1,0 +1,65 @@
+1.scroll behavior
+ humne isliye use kiya hai kyuki humko isme single page aplication banani hai
+
+ 2. #about {in navbar}
+ because humko isme target id ussi page mai rakhni hai or vo scoll hoke humare pas aa jayega 
+
+ 3. what justify content flex-end do!!!
+ The justify-content property in CSS controls the alignment of items along the main axis of a flexbox container. The flex-end value aligns the items at the end of the container.
+
+4.what 900 1rem means?
+ The 900 1rem means that the font size of the element will be 900% of the size of the root element. This can be useful for creating large headings or other elements that you want to stand out.
+
+ 5.what is flex property
+ 6.what justify content flex-end do scss
+ Answer :
+Flex-direction is a CSS property that controls the direction of the flex items in a flex container. It can be set to row, row-reverse, column, or column-reverse. The default value is row.
+The justify-content property in CSS controls the alignment of items along the main axis of a flexbox container. The flex-end value aligns the items at the end of the flexbox container.
+
+
+
+.home2 {
+    height: 100%;
+    width: 100vh;
+    //why width is in vh?
+    background-color: $second;
+    padding: 500px 0;
+    align-items: center;
+    justify-content: center;
+
+
+    >img {
+        width: 30%;
+        animation: imgUp 0.7s linear infinite alternate;
+    }
+
+    >div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // text-align:center;
+        padding: 5rem;
+        height: 100vh;
+    
+
+    >p {
+        color: $first;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        font-weight: 100;
+        font-size: 1.2rem;
+        font-style: $text2;
+
+
+
+    }
+    }
+
+    @keyframes imgUp {
+        to {
+            transform: translateY(-10px);
+        }
+    }
+}
